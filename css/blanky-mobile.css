@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Raleway:400,100,200,300&subset=latin,latin-ext);
 
-
+/* Twitter bootstrap mods */
 
 body,
 td,
@@ -12,9 +12,29 @@ textarea {
     font-family: 'Cabin', sans-serif;
 }
 
-:not(.navbar) > div {
+
+
+.navbar-default {
+/*    background-color:#d1d1d1 ;*/
+    border-color: #d1d1d1;
+}
+
+.navbar-default .navbar-brand {
 
 }
+
+.navbar-fixed-bottom {
+    border-width: 1px 0 0 ;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+
+
+/* Blanky things */
 
 .blanky-buttons > ul {
     display: table;
@@ -28,6 +48,7 @@ textarea {
 .blanky-buttons > ul > li {
     display: table-cell;
     width: 20%;
+
 }
 
 .blanky-buttons > ul > li > a {
@@ -37,11 +58,30 @@ textarea {
     line-height: 3.5em;
 }
 
-.navbar-fixed-bottom {
-    border-width: 1px 0 0 ;
+.blanky-buttons > ul > li > a:active {
+    text-decoration: none;
+    text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    box-shadow: inset 0 30px 30px 0 rgba(0,0,0,0.2);
 }
+
+.blanky-buttons > ul > li > a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(0,0,0,0.1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.1) 100%);
+}
+
 
 #blanky-main-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.blanky-buttons i {
+    font-size: 2em;
+    line-height: 2em;
 }
