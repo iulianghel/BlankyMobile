@@ -1,4 +1,4 @@
 BlankyMobile
 ============
 
-Framework for mobile apps based on Twitter Bootstrap 3
+A simple framework based on Twitter Bootstrap 3 meant to cover the most common view types used in mobile apps.
