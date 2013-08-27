@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Raleway:400,100,200,300&subset=latin,latin-ext);
+
+
+
+body,
+td,
+th,
+button,
+input,
+label,
+textarea {
+    font-family: 'Cabin', sans-serif;
+}
+
+:not(.navbar) > div {
+
+}
+
+.blanky-buttons > ul {
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.blanky-buttons > ul > li {
+    display: table-cell;
+    width: 20%;
+}
+
+.blanky-buttons > ul > li > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+.navbar-fixed-bottom {
+    border-width: 1px 0 0 ;
+}
+
+#blanky-main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
