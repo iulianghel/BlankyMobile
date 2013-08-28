@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Raleway:400,100,200,300&subset=latin,latin-ext);
 
-/* Twitter bootstrap mods */
+/* Base fonts */
 
 body,
 td,
@@ -10,9 +10,49 @@ input,
 label,
 textarea {
     font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 1.33em 0 0;
 }
 
 
+
+/* Twitter bootstrap mods */
+
+
+
+main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .navbar-default {
 /*    background-color:#d1d1d1 ;*/
@@ -21,6 +61,7 @@ textarea {
 
 .navbar-default .navbar-brand {
     white-space: nowrap;
+    font-size: 1.17em;
 }
 
 .navbar-fixed-bottom {
@@ -38,10 +79,26 @@ h1.navbar-text {
     font-size: 2em;
 }
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 1em;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.428571429;
+}
+
+
 
 /* Blanky things */
 
-.blanky-buttons > ul {
+.blanky-footer-buttons > ul {
     display: table;
     list-style: none;
     margin: 0;
@@ -50,26 +107,30 @@ h1.navbar-text {
 
 }
 
-.blanky-buttons > ul > li {
+.blanky-footer-buttons > ul > li {
     display: table-cell;
     width: 10%;
-
+    border-right:1px solid rgba(0,0,0,0.1);
 }
 
-.blanky-buttons > ul > li > a {
+.blanky-footer-buttons > ul > li:last-child {
+    border-right: none;
+}
+
+.blanky-footer-buttons > ul > li > a {
     display: block;
     width: 100%;
     text-align: center;
     line-height: 3.5em;
 }
 
-.blanky-buttons > ul > li > a:active {
+.blanky-footer-buttons > ul > li > a:active {
     text-decoration: none;
     text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
     box-shadow: inset 0 30px 30px 0 rgba(0,0,0,0.2);
 }
 
-.blanky-buttons > ul > li > a:hover {
+.blanky-footer-buttons > ul > li > a:hover {
     text-decoration: none;
     text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
     background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.1) 100%);
@@ -81,29 +142,58 @@ h1.navbar-text {
 }
 
 
-#blanky-main-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.blanky-buttons i {
+
+.blanky-footer-buttons i {
     font-size: 2em;
     line-height: 2em;
 }
 
 
-.blanky-back {
+.blanky-control {
     background-color: transparent;
     border: 1px solid #dddddd;
-    margin: -10px 15px -10px 0;
     color: #cccccc;
-    display: inline-block;
-    position: relative;
-    top: -1px;
+    font-size: .875em;
+
 }
 
-.blanky-back:hover,
-.blanky-back:active {
+.blanky-back {
+    position: relative;
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+
+.blanky-control:hover,
+.blanky-control:active {
     background-color: #dddddd;
     color: #cccccc;
+
+}
+
+
+/* Media queries */
+
+@media screen and (max-width:580px) and (orientation:landscape),
+screen and (max-width:320px) {
+    body,
+    td,
+    th,
+    button,
+    input,
+    label,
+    textarea {
+        font-size: 13px;
+    }
+
+    .blanky-control {
+        font-size: 1.077em;
+
+    }
 }
