@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Raleway:400,100,200,300&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic|Merriweather+Sans:400,300,300italic,700,700italic,800,800italic,400italic&subset=latin,latin-ext);
+
 
 /* Base fonts */
 
@@ -9,39 +10,55 @@ button,
 input,
 label,
 textarea {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-size: 16px;
 }
 
-h1 {
-    font-size: 2em;
+body {
+    box-shadow: inset 0 0 4em 0 rgba(0,0,0,0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+h2 {
+    font-size: 2.4em;
     margin: 0.67em 0 0;
 }
 
 h2 {
+    font-size: 2em;
+    margin: 0.67em 0 0;
+}
+
+h3 {
     font-size: 1.5em;
     margin: 0.83em 0 0;
 }
 
-h3 {
+h4 {
     font-size: 1.17em;
     margin: 1em 0 0;
 }
 
-h4 {
+h5 {
     font-size: 1em;
     margin: 1.33em 0 0;
 }
 
-h5 {
+h6 {
     font-size: 0.83em;
     margin: 1.67em 0 0;
 }
 
-h6 {
-    font-size: 0.67em;
-    margin: 1.33em 0 0;
-}
 
 
 
@@ -55,7 +72,6 @@ main {
 }
 
 .navbar-default {
-/*    background-color:#d1d1d1 ;*/
     border-color: #d1d1d1;
 }
 
@@ -93,6 +109,18 @@ h1.navbar-text {
     font-weight: normal;
     line-height: 1.428571429;
 }
+
+
+.list-group-item {
+    background-color: transparent;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+    background-color: rgba(0,0,0,0.04);
+}
+
+
 
 
 
@@ -176,6 +204,8 @@ h1.navbar-text {
     color: #cccccc;
 
 }
+
+
 
 
 /* Media queries */

@@ -11,11 +11,17 @@
  * Send me music http://www.amazon.co.uk/wishlist/HNTU0468LQON
  */
 (function ($) {
-    $("body").css("padding-top", $(".navbar-fixed-top > .navbar-header").height() + 15 );
-    $("body").css("padding-bottom", $(".navbar-fixed-bottom").height() );
+
+
+
+    var urlend = window.location.href.substring(window.location.href.lastIndexOf('/') + 2);
+    $('main').load(urlend+'.html');
+
+    $("body").css("padding-top", $(".navbar-fixed-top > .navbar-header").height() + 15);
+    $("body").css("padding-bottom", $(".navbar-fixed-bottom").height());
 
     $(window).on("throttledresize", function (event) {
-        $("body").css("padding-top", $(".navbar-fixed-top > .navbar-header").height() + 15 );
+        $("body").css("padding-top", $(".navbar-fixed-top > .navbar-header").height() + 15);
         $("body").css("padding-bottom", $(".navbar-fixed-bottom").height());
     });
 })(jQuery);
